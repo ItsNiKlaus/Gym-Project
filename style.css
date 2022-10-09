@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.399), rgba(29, 27, 27, 0.597)), url('img/gym1.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-position-x: 95%;
+    background-position-y: 5%;
+    overflow-y: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 31%;
+}
+
+.left:link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 24px;
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+.left img {
+    width: 75px;
+    transition: 0.4s all;
+}
+
+.right {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    /* display: inline-block; */
+    list-style: none;
+    font-size: 18px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: 0.3s all;
+    letter-spacing: 0.6px;
+}
+
+.navbar li a:hover {
+    color: #333;
+    background-color: #f7f7f7;
+    font-size: 18.3 px;
+}
+
+.navbar a.active {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.navbar a.active:hover {
+    font-size: 18px;
+}
+
+.btn {
+    margin: 16px 9px;
+    color: white;
+    background-color: black;
+    padding: 3px 4px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn:hover {
+    background-color: rgb(97, 96, 96);
+}
+
+#resetbtn:hover {
+    background-color: rgb(97, 96, 96);
+}
+
+.container {
+    position: absolute;
+    top: 60px;
+    right: 3px;
+    /* border: 2px solid white; */
+    margin: 0px 20px;
+    padding: 65px 67px;
+    width: 34%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/*.container{
+    background-image: url(img/gym5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid white;
+    margin: 106px auto;
+    padding: 75px;
+    width: 33%;
+    border-radius: 28px;
+}*/
+
+.formgroup {
+    margin: 24px 0;
+}
+
+.formgroup input {
+    margin-bottom: 20px;
+    text-align: left;
+    display: block;
+    width: 450px;
+    padding: 4px 0;
+    border: none;
+    border-bottom: 1px solid #777;
+    margin: 6px auto;
+    font-size: 19px;
+    /* border-radius: 6px; */
+    background-color: transparent;
+    letter-spacing: 1px;
+    color: #f7f7f7;
+    font-weight: 100;
+
+}
+
+form {
+    margin-left: 50px;
+}
+
+.formgroup input:focus {
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+
+::placeholder {
+    color: #adb5bd;
+    opacity: 0.8;
+    font-weight: 100;
+    /* font-weight: lighter; */
+}
+
+.container h2 {
+    text-align: left;
+    margin-left: 60px;
+    font-weight: 300;
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.options {
+    text-align: left;
+    display: block;
+    width: 450px;
+    padding: 1px;
+    margin: 6px auto;
+    font-size: 18px;
+    height: 36px;
+    font-size: 19px;
+    background-color: transparent;
+    letter-spacing: 1px;
+    color: #adb5bd;
+    font-weight: 100;
+    border: none;
+    border-bottom: 1px solid #777;
+}
+
+.left div {
+    cursor: default;
+}
+
+.left img:hover {
+    transform: scale(1.2);
+}
+
+
+.container button {
+    display: block;
+    margin: 16px auto;
+    margin-top: 40px;
+    color: #f7f7f7;
+    background-color: black;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 475px;
+    letter-spacing: 0.75px;
+    transition: 0.4s all ease-out;
+}
+
+.container button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.02);
+}
+
+
+.bottom {
+    position: absolute;
+    bottom: 44px;
+    left: 2.5%;
+    /* transform: translate(-50%, 0); */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.btn-bottom {
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    color: #333;
+    transition: 0.4s all;
+    border: 2px solid transparent;
+}
+
+.btn-bottom:hover {
+    background-color: transparent;
+    color: #f7f7f7;
+    cursor: pointer;
+    /* font-size: 15px; */
+    border: 2px solid #f7f7f7;
+    transform: scale(1.03);
+}
+
+.contact {
+    height: 45px;
+    width: 45px;
+    transition: 0.3s all ease-out;
+}
+
+.contact:hover {
+    transform: scale(1.2);
+}
